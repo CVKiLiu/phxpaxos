@@ -179,7 +179,7 @@ function install_gflags()
     # end check.
     go_back;
     cd $lib_name;
-    CXXFLAGS=-fPIC cmake . -DCMAKE_INSTALL_PREFIX=$(pwd);
+ke . -DCMAKE_INSTALL_PREFIX=$(pwd);
     make && make install;
 
     check_lib_exist $lib_name;
